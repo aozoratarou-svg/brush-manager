@@ -1,0 +1,268 @@
+import type { Manufacturer, Color } from '../types/index';
+
+// メーカーマスタデータ
+export const manufacturers: Manufacturer[] = [
+  {
+    id: 'holbein',
+    name: 'Holbein',
+    nameJa: 'ホルベイン',
+    logo: '🇯🇵',
+    region: 'JP',
+    website: 'https://www.holbein-works.co.jp',
+  },
+  {
+    id: 'winsor-newton',
+    name: 'Winsor & Newton',
+    nameJa: 'ウィンザーニュートン',
+    logo: '🇬🇧',
+    region: 'EU',
+    website: 'https://www.winsornewton.com',
+  },
+  {
+    id: 'turner',
+    name: 'Turner Colours',
+    nameJa: 'ターナー',
+    logo: '🇯🇵',
+    region: 'JP',
+  },
+  {
+    id: 'schmincke',
+    name: 'Schmincke',
+    nameJa: 'シュミンケ',
+    logo: '🇩🇪',
+    region: 'EU',
+    website: 'https://www.schmincke.de',
+  },
+  {
+    id: 'daniel-smith',
+    name: 'Daniel Smith',
+    nameJa: 'ダニエルスミス',
+    logo: '🇺🇸',
+    region: 'US',
+    website: 'https://www.danielsmithartistmaterials.com',
+  },
+  {
+    id: 'custom',
+    name: 'My Collection',
+    nameJa: 'マイコレクション',
+    logo: '✨',
+    region: 'JP',
+  },
+];
+
+// サンプル色データ（実際のWBデータから）
+export const colorCatalog: Color[] = [
+  // ホルベイン
+  {
+    id: 'holbein-cadmium-yellow-light',
+    manufacturerId: 'holbein',
+    name: 'Cadmium Yellow Light',
+    nameJa: 'カドミウムイエローライト',
+    hex: '#FFF066',
+    pigments: ['PY35'],
+    lightfastness: 'I',
+  },
+  {
+    id: 'holbein-cadmium-yellow',
+    manufacturerId: 'holbein',
+    name: 'Cadmium Yellow',
+    nameJa: 'カドミウムイエロー',
+    hex: '#FFED4E',
+    pigments: ['PY35'],
+    lightfastness: 'I',
+  },
+  {
+    id: 'holbein-cadmium-orange',
+    manufacturerId: 'holbein',
+    name: 'Cadmium Orange',
+    nameJa: 'カドミウムオレンジ',
+    hex: '#FF9600',
+    pigments: ['PO20'],
+    lightfastness: 'I',
+  },
+  {
+    id: 'holbein-ultramarine',
+    manufacturerId: 'holbein',
+    name: 'Ultramarine',
+    nameJa: 'ウルトラマリン',
+    hex: '#3F1F7E',
+    pigments: ['PB29'],
+    lightfastness: 'I',
+  },
+  {
+    id: 'holbein-permanent-red',
+    manufacturerId: 'holbein',
+    name: 'Permanent Red',
+    nameJa: 'パーマネントレッド',
+    hex: '#E60012',
+    pigments: ['PR112'],
+    lightfastness: 'I',
+  },
+  {
+    id: 'holbein-alizarin-crimson',
+    manufacturerId: 'holbein',
+    name: 'Alizarin Crimson',
+    nameJa: 'アリザリンクリムソン',
+    hex: '#C60239',
+    pigments: ['PR83'],
+    lightfastness: 'I',
+  },
+  {
+    id: 'holbein-viridian',
+    manufacturerId: 'holbein',
+    name: 'Viridian',
+    nameJa: 'ビリジアン',
+    hex: '#0BA45E',
+    pigments: ['PG18'],
+    lightfastness: 'I',
+  },
+  {
+    id: 'holbein-cerulean-blue',
+    manufacturerId: 'holbein',
+    name: 'Cerulean Blue',
+    nameJa: 'セルリアンブルー',
+    hex: '#0080B0',
+    pigments: ['PB35'],
+    lightfastness: 'I',
+  },
+  // ウィンザーニュートン
+  {
+    id: 'wn-permanent-rose',
+    manufacturerId: 'winsor-newton',
+    name: 'Permanent Rose',
+    nameJa: 'パーマネントローズ',
+    hex: '#E73F88',
+    pigments: ['PV19'],
+    lightfastness: 'I',
+  },
+  {
+    id: 'wn-cerulean-blue',
+    manufacturerId: 'winsor-newton',
+    name: 'Cerulean Blue',
+    nameJa: 'セルリアンブルー',
+    hex: '#0080B0',
+    pigments: ['PB35'],
+    lightfastness: 'I',
+  },
+  {
+    id: 'wn-viridian',
+    manufacturerId: 'winsor-newton',
+    name: 'Viridian Hue',
+    nameJa: 'ビリジアンヒュー',
+    hex: '#0BA45E',
+    pigments: ['PG18'],
+    lightfastness: 'I',
+  },
+  {
+    id: 'wn-cadmium-yellow',
+    manufacturerId: 'winsor-newton',
+    name: 'Cadmium Yellow',
+    nameJa: 'カドミウムイエロー',
+    hex: '#FFED4E',
+    pigments: ['PY35'],
+    lightfastness: 'I',
+  },
+  {
+    id: 'wn-french-ultramarine',
+    manufacturerId: 'winsor-newton',
+    name: 'French Ultramarine',
+    nameJa: 'フレンチウルトラマリン',
+    hex: '#4A3F9E',
+    pigments: ['PB29'],
+    lightfastness: 'I',
+  },
+  // ターナー
+  {
+    id: 'turner-titanium-white',
+    manufacturerId: 'turner',
+    name: 'Titanium White',
+    nameJa: 'チタニウムホワイト',
+    hex: '#FFFFFF',
+    pigments: ['PW6'],
+    lightfastness: 'I',
+  },
+  {
+    id: 'turner-cadmium-yellow-light',
+    manufacturerId: 'turner',
+    name: 'Cadmium Yellow Light',
+    nameJa: 'カドミウムイエローライト',
+    hex: '#FFF066',
+    pigments: ['PY35'],
+    lightfastness: 'I',
+  },
+  {
+    id: 'turner-cobalt-blue',
+    manufacturerId: 'turner',
+    name: 'Cobalt Blue',
+    nameJa: 'コバルトブルー',
+    hex: '#004B87',
+    pigments: ['PB28'],
+    lightfastness: 'I',
+  },
+  // シュミンケ
+  {
+    id: 'schmincke-lemon-yellow',
+    manufacturerId: 'schmincke',
+    name: 'Lemon Yellow',
+    nameJa: 'レモンイエロー',
+    hex: '#FFFD38',
+    pigments: ['PY3'],
+    lightfastness: 'I',
+  },
+  {
+    id: 'schmincke-cadmium-yellow',
+    manufacturerId: 'schmincke',
+    name: 'Cadmium Yellow',
+    nameJa: 'カドミウムイエロー',
+    hex: '#FFED4E',
+    pigments: ['PY35'],
+    lightfastness: 'I',
+  },
+  {
+    id: 'schmincke-ultramarine',
+    manufacturerId: 'schmincke',
+    name: 'Ultramarine',
+    nameJa: 'ウルトラマリン',
+    hex: '#3F1F7E',
+    pigments: ['PB29'],
+    lightfastness: 'I',
+  },
+  // ダニエルスミス
+  {
+    id: 'ds-anthraquinoid-crimson',
+    manufacturerId: 'daniel-smith',
+    name: 'Anthraquinoid Crimson',
+    nameJa: 'アンスラキノイドクリムソン',
+    hex: '#A41E35',
+    pigments: ['PR177'],
+    lightfastness: 'I',
+  },
+  {
+    id: 'ds-cadmium-yellow-light',
+    manufacturerId: 'daniel-smith',
+    name: 'Cadmium Yellow Light',
+    nameJa: 'カドミウムイエローライト',
+    hex: '#FFF066',
+    pigments: ['PY35'],
+    lightfastness: 'I',
+  },
+  {
+    id: 'ds-cerulean-blue',
+    manufacturerId: 'daniel-smith',
+    name: 'Cerulean Blue',
+    nameJa: 'セルリアンブルー',
+    hex: '#0080B0',
+    pigments: ['PB35'],
+    lightfastness: 'I',
+  },
+];
+
+// メーカーで色をグループ化したマップ
+export const colorsByManufacturer: Record<string, Color[]> = {};
+
+colorCatalog.forEach((color) => {
+  if (!colorsByManufacturer[color.manufacturerId]) {
+    colorsByManufacturer[color.manufacturerId] = [];
+  }
+  colorsByManufacturer[color.manufacturerId].push(color);
+});
